@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
+    <package name="struts2" namespace="/" extends="struts-default">
+        <action name="user" class="action.LoginAction">
+            <result name="success">/index.jsp</result>
+            <result name="fail">/result.jsp</result>
+    </action>
+        <!--<action name="Login" class="action.LoginAction">
+           &lt;!&ndash; <result name="success">/result.jsp</result>&ndash;&gt;
+        </action>-->
+    </package>
+
+    <!-- Add packages here -->
+
+</struts>
